@@ -1,122 +1,129 @@
 # RunGroup
 
-# UI Overview for Event Management Application
 
-## **General Structure**
-- **Layout:** The `layout.html` file serves as a shared template for all pages. It includes a header, navigation bar, and footer, styled with Bootstrap for a responsive and polished look.
-- **Navigation Bar:**
-  - Links: Home, Find Clubs, Find Events, and Directory.
-  - User Actions Dropdown: Options to create a running club, log in, register, and log out.
-- **Dynamic Content:** Thymeleaf templates (`th:replace`) dynamically inject page-specific content into the base layout.
+# RunGroup Application
+
+RunGroup is a robust platform designed to connect runners of all levels, facilitate running group formations, and streamline training plans. Whether you are training for a marathon, improving your health, or enjoying casual runs, RunGroup is the perfect tool to keep you motivated and organized.
 
 ---
 
-## **Page Details**
+## Features
 
-### 1. **Events Create (`events-create.html`)**
-- **Purpose:** Provides a form for users to create new events.
-- **Features:**
-  - A user-friendly form with fields for:
-    - **Name:** Text input for the event name.
-    - **Type:** Text input for the type of event (e.g., Road Race, Marathon).
-    - **Photo URL:** Text input to link an image for the event.
-    - **Start Time:** Date-time picker for the event start.
-    - **End Time:** Date-time picker for the event end.
-  - **Error Messages:** Displayed near relevant fields for validation issues.
-  - **Submit Button:** Styled using Bootstrap for consistency.
-  - Form is functional and integrates with backend validation and persistence.
+### **User Profiles**
+- Create and customize your profile with personal running goals, achievements, and stats.
+- View other runners' profiles to connect with like-minded individuals.
 
----
+### **Group Formation**
+- Find and join running groups in your local area or create your own.
+- Specify group preferences like pace, distance, and meeting times.
 
-### 2. **Events Detail (`events-detail.html`)**
-- **Purpose:** Displays all information about a specific event.
-- **Features:**
-  - **Header Section:**
-    - Event name displayed prominently.
-    - Event location (e.g., "Charlotte, NC").
-  - **Details Section:**
-    - **Event Photo:** A large image representing the event.
-    - **Event Type:** The category/type of the event.
-    - **Creation Date:** When the event was created.
-    - **Delete Button:** Allows users to remove the event permanently.
-  - **Sidebar Widgets:**
-    - **Search Widget:** Input field for keyword searches.
-    - **Categories Widget:** Links to predefined categories (e.g., Road Runner, Trail).
-    - **Side Widget:** Placeholder content for promotions, announcements, or additional links.
+### **Training Plans**
+- Access a library of customizable training plans tailored to various goals.
+- Track your progress and get reminders for scheduled runs.
+
+### **Event Management**
+- Discover and register for local and virtual running events.
+- Organize group participation and sync with your calendar.
+
+### **Social Integration**
+- Share milestones, photos, and updates on your feed.
+- Engage with comments, likes, and group chats.
 
 ---
 
-### 3. **Events Edit (`events-edit.html`)**
-- **Purpose:** Enables users to modify an existing event.
-- **Features:**
-  - A pre-populated form, similar to `events-create.html`, allowing users to edit:
-    - Name
-    - Type
-    - Photo URL
-    - Start Time
-    - End Time
-  - **Error Messages:** Displayed for invalid fields to guide corrections.
-  - **Submit Button:** Styled consistently across the application.
+## Getting Started
+
+### **Prerequisites**
+To run this application locally, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14+)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [MongoDB](https://www.mongodb.com/)
+
+### **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/RunGroup.git
+   cd RunGroup
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up the environment variables. Create a `.env` file in the root directory and add the following:
+   ```env
+   PORT=3000
+   MONGO_URI=your-mongodb-uri
+   JWT_SECRET=your-jwt-secret
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+Visit `http://localhost:3000` in your browser to access the application.
 
 ---
 
-### 4. **Events List (`events-list.html`)**
-- **Purpose:** Displays all available events in a grid format.
-- **Features:**
-  - **Event Cards:** Each event displays:
-    - A photo.
-    - The event name (linked to the event details page).
-    - Action buttons:
-      - **View:** Navigates to the event details.
-      - **Edit:** Opens the event editing form.
-  - **Dynamic Listing:** Powered by Thymeleaf’s `th:each`, which iterates through the backend-provided list of events.
-  - **Responsive Design:** Ensures cards adjust layout seamlessly across devices.
+## Technologies Used
+
+### **Frontend**
+- React.js with Context API
+- Styled Components
+
+### **Backend**
+- Node.js with Express
+- MongoDB with Mongoose
+- JSON Web Tokens (JWT) for Authentication
+
+### **Other Tools**
+- ESLint and Prettier for Code Quality
+- Postman for API Testing
 
 ---
 
-### 5. **Layout (`layout.html`)**
-- **Purpose:** Defines the overall structure and reusable UI components for the application.
-- **Features:**
-  - **Header & Navigation Bar:**
-    - Consistent across all pages.
-    - Links: Home, Find Clubs, Find Events, and Directory.
-    - User dropdown menu for:
-      - Creating a running club.
-      - Logging in or out.
-      - Registering a new account.
-  - **Footer:**
-    - Includes links for Privacy, Terms, and Contact.
-    - Copyright notice for branding.
-  - **Dynamic Content Placeholder:** Uses `layout:fragment="body"` to embed page-specific content dynamically.
+## Contributing
+
+We welcome contributions to improve RunGroup!
+
+### **Steps to Contribute**
+1. Fork the repository.
+2. Create a new branch for your feature/bug fix.
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to your fork and submit a pull request.
 
 ---
 
-## **Common UI Features**
-- **Styling & Responsiveness:** 
-  - Bootstrap is used throughout for a consistent, modern, and mobile-friendly design.
-- **Dynamic Data Injection:** Thymeleaf seamlessly integrates server-side data with front-end templates.
-- **Error Handling:**
-  - Inline validation messages for form fields.
-  - Meaningful error indicators and prompts to improve the user experience.
-- **Search & Filters:**
-  - Sidebar widgets in detail pages allow users to search for events or filter them by categories.
+## License
+
+RunGroup is licensed under the [MIT License](LICENSE).
 
 ---
 
-## **Unique Features Highlighted from the First Message**
-1. **Form Validation Feedback:** 
-   - In `events-create.html` and `events-edit.html`, validation errors are displayed inline, ensuring users can address issues effectively.
-2. **Efficient Layout Reuse:**
-   - The `layout.html` file uses Thymeleaf’s `th:replace` and `th:block` to minimize code duplication.
-3. **Dynamic Content Loading:**
-   - Events are displayed dynamically using Thymeleaf `th:each` in list pages.
-4. **Edit and Delete Actions:**
-   - Direct action buttons (edit/delete) enhance usability by enabling quick modifications.
-5. **Category Navigation:**
-   - The categories widget on the sidebar provides links to predefined event types, enhancing discoverability.
+## Contact
+
+Have questions or feedback? Contact us at:
+- **Email:** support@rungroup.com
+- **Twitter:** [@RunGroupApp](https://twitter.com/RunGroupApp)
 
 ---
 
-Let me know if you need additional details or edits!
+### Let’s Run Together!
+
+
+
+
+
+
+
+
+
+
 
 
