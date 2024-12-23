@@ -80,7 +80,7 @@ RunGroup
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/RunGroup.git
+   git clone https://github.com/pslavchev11/RunGroup.git
    ```
 
 2. Navigate to the project directory:
@@ -151,14 +151,5 @@ The project uses Thymeleaf for dynamic HTML content generation. Key templates in
 - **clubs-detail.html** - Details of a specific club and associated events.
 - **clubs-edit.html** - Form for editing a club.
 
-## Contributing
 
-Contributions are welcome! Please fork the repository and create a pull request.
 
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For any inquiries or feedback, contact yourname@example.com.
