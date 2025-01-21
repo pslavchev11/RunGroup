@@ -31,8 +31,8 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 ## Screenshots
 
 ### Main Window
-[Main Window](![image](https://github.com/user-attachments/assets/85a5a48c-e37c-49e6-8e43-296c0eb874a0)
-)
+[Main Window](https://github.com/user-attachments/assets/b07afde2-64e2-4f98-b757-76cec956c174)
+
 
 ## Technologies Used
 
