@@ -28,6 +28,12 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 ### Downloadable Files:
 - Generate and download files such as JSON files for export.
 
+## Screenshots
+
+### Main Window
+[Main Window](![image](https://github.com/user-attachments/assets/85a5a48c-e37c-49e6-8e43-296c0eb874a0)
+)
+
 ## Technologies Used
 
 ### Frameworks:
