@@ -12,9 +12,7 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Thymeleaf Templates](#thymeleaf-templates)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+
 
 ## Features
 
