@@ -3,9 +3,11 @@
 
 RunGroup is a Spring Boot-based web application that allows users to manage running clubs and events. This project provides a platform for creating, updating, searching, and managing running clubs and their associated events.
 
+---
 ## Table of Contents
 
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
@@ -13,7 +15,7 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 - [API Endpoints](#api-endpoints)
 - [Thymeleaf Templates](#thymeleaf-templates)
 
-
+---
 ## Features
 
 ### Manage Clubs:
@@ -28,6 +30,7 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 ### Downloadable Files:
 - Generate and download files such as JSON files for export.
 
+---
 ## Screenshots
 
 ### Main Window
@@ -37,10 +40,22 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 ### View(Club) - Button
 [View - Button](https://github.com/user-attachments/assets/3cfa4b95-254d-416a-87ca-3c6013851586)
 
-###
+### Edit(Club) - Button
+[Edit - Button](https://github.com/user-attachments/assets/47f401b5-1161-49dd-b9b6-05154c5c9666)
 
+### Create(Club) - Button
+[Create - Button](https://github.com/user-attachments/assets/6f333da5-ca56-4fc7-ac25-fe08d71ffc68)
 
+### View(Event) - Button
+[View - Button](https://github.com/user-attachments/assets/348ca919-b25b-4be4-a5de-2aae1dd751b2)
 
+### Edit(Event) - Button
+[Edit - Button](https://github.com/user-attachments/assets/92f0cb28-9f79-4aef-a69e-be4e5321a8a2)
+
+### Create(Event) - Button
+[Create - Button](https://github.com/user-attachments/assets/81d0a17f-1b76-46be-9d67-3799d086374a)
+
+---
 ## Technologies Used
 
 ### Frameworks:
@@ -57,6 +72,7 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 - Apache Tomcat (embedded in Spring Boot)
 - Maven (build and dependency management)
 
+---
 ## Project Structure
 
 ```
@@ -80,6 +96,7 @@ RunGroup
 |-- pom.xml
 ```
 
+---
 ## Installation
 
 ### Prerequisites
@@ -112,6 +129,7 @@ RunGroup
 5. Access the application in your web browser at:
    [http://localhost:8080](http://localhost:8090)
 
+---
 ## Usage
 
 ### Running Clubs
@@ -126,6 +144,7 @@ RunGroup
 - **Edit Event:** Visit `/events/{eventId}/edit` to modify an event’s details.
 - **Delete Event:** Use the delete link on an event’s details page.
 
+---
 ## API Endpoints
 
 ### Club Endpoints
@@ -153,6 +172,7 @@ RunGroup
 | POST   | `/events/{eventId}/edit`| Update an event             |
 | GET    | `/events/{eventId}/delete`| Delete an event           |
 
+---
 ## Thymeleaf Templates
 
 The project uses Thymeleaf for dynamic HTML content generation. Key templates include:
