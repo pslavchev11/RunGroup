@@ -9,9 +9,7 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Authentication & Authorization](#authentication--authorization)
 - [API Endpoints](#api-endpoints)
 - [Thymeleaf Templates](#thymeleaf-templates)
@@ -37,39 +35,51 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 - Login and logout functionality.
 - Secure access to certain features based on user roles.
 
-### Downloadable Files:
 
-- Generate and download files such as JSON files for export.
 
 ---
 
 ## Screenshots
 
 ### Main Window
+[Main Window](https://github.com/user-attachments/assets/e224bfe3-2f8c-495a-a530-91e78f380c89)
 
 
 
 ### View(Club) - Button
-
+[View](https://github.com/user-attachments/assets/70441e95-da1f-46ab-856f-f8cf4b3ff0de)
 
 
 ### Edit(Club) - Button
+[Edit](https://github.com/user-attachments/assets/18cb017f-37d6-4501-81d0-c6a792b4bfe2)
 
 
 
 ### Create(Club) - Button
+[Create](https://github.com/user-attachments/assets/98400011-0f92-4ccf-9471-ccb7f06ae210)
 
 
 
 ### View(Event) - Button
+[View](https://github.com/user-attachments/assets/f311e9fc-7fe3-4122-bf4e-c140b3989214)
 
 
 
 ### Edit(Event) - Button
+[Edit](https://github.com/user-attachments/assets/1be0d2f4-94c8-45b2-ab82-71a652ade7e1)
 
 
 
 ### Create(Event) - Button
+[Create](https://github.com/user-attachments/assets/02b31d3c-bba9-4de5-b75a-7d2c8f861c5d)
+
+### Login
+[Login](https://github.com/user-attachments/assets/3bc0c512-93e2-44fa-a410-2549ca6767f0)
+
+### Register
+[Register](https://github.com/user-attachments/assets/759f5916-5fad-4eaf-b9a9-9ce43396b922)
+
+
 
 
 
@@ -88,42 +98,13 @@ RunGroup is a Spring Boot-based web application that allows users to manage runn
 
 ### Database:
 
-- H2 Database (in-memory database for development)
+- PostgreSQL
 
 ### Tools:
 
 - Apache Tomcat (embedded in Spring Boot)
 - Maven (build and dependency management)
 
----
-
-## Project Structure
-
-```
-RunGroup
-|-- src
-|   |-- main
-|   |   |-- java/com/rungroup/web/controller
-|   |   |   |-- ClubController.java
-|   |   |   |-- EventController.java
-|   |   |   |-- AuthController.java
-|   |   |-- java/com/rungroup/web/dto
-|   |   |-- java/com/rungroup/web/models
-|   |   |-- java/com/rungroup/web/service
-|   |   |-- java/com/rungroup/web/repository
-|   |   |-- resources/templates
-|   |       |-- clubs-list.html
-|   |       |-- clubs-create.html
-|   |       |-- clubs-detail.html
-|   |       |-- clubs-edit.html
-|   |       |-- login.html
-|   |       |-- register.html
-|   |       |-- layout.html
-|   |-- test
-|-- pom.xml
-```
-
----
 
 ## Installation
 
@@ -159,7 +140,7 @@ RunGroup
    mvn spring-boot:run
    ```
 
-5. Access the application in your web browser at: [http://localhost:8080](http://localhost:8080)
+5. Access the application in your web browser at: [http://localhost:8091](http://localhost:8091)
 
 ---
 
